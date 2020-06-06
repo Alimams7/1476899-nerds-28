@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 500;
+     src: url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/roboto-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     src: url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+}
+
+/* Variables */
+:root {
+     --basic-black: #000000;
+     --basic-dark-gray: #283136;
+     --basic-gray: #444444;
+     --basic-light-gray: #666666;
+     --basic-soft-gray: #A7A7A7;
+     --basic-dark-white: #EEEEEE;
+     --basic-white: #FFFFFF;
+     --basic-soft-red: #FB565A;
+     --basic-soft-green: #00CA74;
+     --basic-soft-yellow: #EFC849;
+}
+  /* Global */
+body {
+     min-width: 1197px;
+     margin: 0;
+     padding: 0;
+     font-family: "Roboto", sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+     color: var(--basic-black);
+     background-color: var(--basic-white);
+}
+
+a {
+     text-decoration: none;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+.visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+}
+.maim-navigation {
+     font-size: 16px;
+     line-height: 30px;
+     color: var( --basic-black);
+     background-color: var(--basic-dark-white);
+     text-transform: uppercase;
+}
+
+.site-navigation,
+.category-list,
+.description-list,
+.list-of-partners,
+.footer-contacts{
+     list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+     text-decoration: underline;
+     text-decoration-color: var(--basic-soft-red);
+}
+
+/* User navigation */
+.site-navigation a,
+.basket-navigation a {
+     color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.basket-navigation a:hover {
+     color: var(--basic-soft-red) ;
+}
+
+.site-navigation a:focus,
+.basket-navigation a:focus{
+     color: var(--basic-soft-gray);
+}
+/* Features */
+
+
+.slogan {
+     font-size: 55px;
+     font-weight: 500;
+     line-height: 55px;
+}
+
+/* Buttom */
+.buttom {
+     color: var(--basic-white);
+     text-transform: uppercase;
+     font-weight:500;
+     background: var(--basic-soft-red);
+     border-radius: 3px;
+     padding: 16px 54px;
+     display: inline-flex;
+}
+
+.buttom-slider-red{
+     color: var(--basic-white);
+     text-transform: uppercase;
+     font-weight:500;
+     background: var(--basic-soft-red);
+     border-radius: 3px;
+     padding: 16px 40px;
+     display: inline-flex;
+}
+
+.buttom-slider-green{
+     color: var(--basic-white);
+     text-transform: uppercase;
+     font-weight:500;
+     background: var(--basic-soft-green);
+     border-radius: 3px;
+     padding: 16px 40px;
+     display: inline-flex;
+}
+
+.buttom-slider-yellow{
+     color: var(--basic-white);
+     text-transform: uppercase;
+     font-weight:500;
+     background: var(--basic-soft-yellow);
+     border-radius: 3px;
+     padding: 16px 40px;
+     display: inline-flex;
+}
+
+/* Сategories */
+
+.categories-slogan{
+     font-weight: bold;
+     font-size: 24px;
+     text-transform: uppercase;
+     line-height: 30px;
+}
+
+/* Description */
+.description-header {
+     font-size: 45px;
+     font-weight: 500;
+     line-height: 45px;
+}
+.description-list-marker{
+     color: var(--basic-soft-red);
+     font-size: 25px;
+     margin: 0 7px;
+}
+
+/* Footer */
+.footer-feedback-header {
+     font-size: 18px;
+     line-height: 30px;
+     font-weight: bold;
+}
+.footer-feedback-description {
+     line-height: 18px;
+     color: var(--basic-light-gray);
+}
+.buttom-feedback {
+     color: var(--basic-white);
+     text-transform: uppercase;
+     font-weight: 500;
+     background: var(--basic-soft-red);
+     border-radius: 3px;
+     padding: 16px 44px;
+     display: inline-flex;
+}
+.footer-header-stock {
+     font-size: 36px;
+     line-height: 36px;
+     font-weight: bold;
+}
+.footer-stock {
+     line-height: 22px;
+     color: var(--basic-gray);
+}
