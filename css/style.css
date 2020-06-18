@@ -92,16 +92,15 @@ img {
      align-content: center;
      margin: 0 auto;
      padding: 0;
-     max-width: 1160px;
      min-height: 100px;
-     position: relative
+     position: relative;
 }
 
 .main-header {
      margin: 0;
      min-width: 1200px;
      padding: 50px 0 0;
-     background-color: #eee;
+     background-color: var(--basic-dark-white);
 }
 
 .maim-navigation {
@@ -123,10 +122,6 @@ img {
      margin: 0px 0px 0px 202px;
 }
 
-.site-navigation {
-     display: flex;
-}
-
 .conteiner {
      margin: 0 auto;
      padding: 0;
@@ -146,6 +141,7 @@ img {
      clip: rect(0 0 0 0);
      overflow: hidden;
 }
+
 .maim-navigation {
      font-size: 16px;
      line-height: 30px;
@@ -160,6 +156,7 @@ img {
      padding: 0;
      min-height: 31px;
      list-style: none;
+     display: flex;
 }
 
 .site-navigation li {
@@ -352,21 +349,6 @@ img {
      border-radius: 50%;
  }
 
- .slide-template {
-     outline: 5px solid rgba(255, 30, 0, 0.3);
-     outline-offset: -5px;
- }
-
-.slide-text {
-     outline: 5px solid rgba(0, 255, 0, 0.3);
-     outline-offset: -5px;
-}
-
-.slide-img{
-     outline: 5px solid rgba(90, 47, 46, 0.315);
-     outline-offset: -5px;
-}
-
 .slider-controls label {
      position: relative;
      display: inline-block;
@@ -500,8 +482,14 @@ img {
      line-height: 30px;
 }
 
+.categories-slogan p{
+     font-size: 16px;
+     line-height: 24px;
+     color: var(--basic-dark-gray);
+}
+
 .categories {
-     margin-bottom: 80px;
+     margin-bottom: 39px;
      border-bottom: 2px solid #eee
 
 }
@@ -513,11 +501,6 @@ img {
      padding: 80px 0px 80px 0px ;
 }
 
-.categories-item {
-     text-align: center;
-}
-
-
 /* Description */
 
 .description {
@@ -526,7 +509,7 @@ img {
      padding: 0;
      display: grid;
      grid-template-columns: 1fr 1fr;
-     padding: 39px 0 74px;
+     padding-bottom: 74px;
      border-bottom: 2px solid #eee
 }
 
@@ -538,11 +521,15 @@ img {
 }
 
 .description-general {
-     text-align: center;
+     text-align: initial;
 }
 
 .description-statistics {
      text-align: center;
+}
+
+.description-list {
+     padding: 0px;
 }
 
 .description-header {
@@ -554,7 +541,7 @@ img {
 .description-list-marker{
      color: var(--basic-red);
      font-size: 25px;
-     margin: 0 7px;
+     margin: 0 7px 0 0;
 }
 
 .table-statistics {
@@ -571,6 +558,8 @@ table {
      line-height: 18px;
      padding: 10px;
      text-align: left;
+     font-size: 16px;
+     font-weight: normal;
 }
 
 .table-statistics-numbers{
@@ -617,6 +606,25 @@ table {
 }
 
 /*map */
+
+.map {
+     position: relative;
+     width: 100%;
+     height: 416px;
+     margin-top: 80px;
+
+}
+.feedback-adress {
+     position: absolute;
+     width: 297px;
+     padding: 32px 10px 46px;
+     background-color: #fff;
+}
+
+.map .conteiner {
+     top: -355px;
+     left: -30px;
+}
 
 /* Footer */
 
@@ -678,11 +686,11 @@ table {
      margin: 10px 0px;
 }
 
-svg path:hover{
+.footer-contacts-list svg path:hover{
      fill: var(--basic-red);
 }
 
-svg path:focus{
+.footer-contacts-list svg path:focus{
      fill: var(--basic-dark-red);
 }
 
@@ -712,44 +720,60 @@ svg path:focus{
 /* Catalog */
 
 .catalog-filter {
-     width: 260px;
-     outline-offset: -5px;
-     outline: 5px solid rgba(255, 0, 255, 0.7);
+     width: 260px;;
 }
 
 .catalog {
      margin-left: 60px;
-     outline-offset: -5px;
-     outline: 5px solid rgba(0, 255, 255, 0.7);
 }
 
 .page-catalog{
      display: grid;
      grid-template-columns: min-content 1fr;
      align-content: start;
+     margin-top: 55px;
      
 }
 
-/*.catalog-list {
+.catalog-list {
      display: flex;
      flex-wrap: wrap;
      padding: 0;
      margin: 0;
-     margin-bottom: 25px;
+     margin-bottom: 140px;
      list-style: none;
-}*/
+}
 
 .catalog-item {
-     background-color: var(--basic-extra-light);
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      width: 220px;
+     min-height: 285px;
+     margin-right: 41px;
+     margin-bottom: 34px;
+
      min-height: 285px;
      margin-right: 20px;
      margin-bottom: 20px;
+
+     position: relative;
+     width: 360px;
+     margin-bottom: 26px;
+     margin-right: 41px;
 }
 
 .catalog-item:nth-child(2n) {
      margin-right: 0;
+}
+
+.catalog-item img {
+     margin-top: -6px;
+}
+
+.catalog-item path {
+     fill: #e9e9e9;
+}
+
+.catalog-item path:hover {
+     fill: #4d4d4d;
 }
 
 .catalog-header {
@@ -757,7 +781,7 @@ svg path:focus{
      line-height: 55px;
      font-weight: 500;
      background-color: var(--basic-dark-white);
-     padding: 45px 0px;
+     padding: 87px 0px 108px 0px;
      text-align: center;
      margin: 0;
 }
@@ -769,16 +793,32 @@ svg path:focus{
      text-transform: uppercase;
 }
 
-.filter-sort {
+.sort {
      display: flex;
 }
 
-.filter-sort-list {
+.filter-sort-header {
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 30px;
+     text-transform: uppercase;
+     margin-right: 266px;
+}
+
+.filter-sort {
+     display: flex;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+     margin: 0px 0px 54px 0px;
+}
+
+.filter-sort-list{
      font-size: 14px;
      line-height: 18px;
      color: var(--basic-black);
      opacity: 0.3;
      text-transform: uppercase;
+     margin-right: 25px;
 }
 
 .filter-sort-list:hover{
@@ -788,6 +828,28 @@ svg path:focus{
 
 .filter-sort-list:focus {
      color: var(--basic-black);
+}
+
+.filter-sort-item-down {
+     width: 0;
+	height: 0;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+     border-top: 10px solid var(--basic-black);
+     opacity: 0.2;
+     margin-top: 8px;
+}
+
+.filter-sort-item-down:hover {
+     opacity: 0.6;
+}
+
+.filter-sort-item-down:focus{
+     opacity: 1;
+}
+
+.filter-sort-item-up {
+     
 }
 
 .filter-values-grid label,
@@ -813,19 +875,19 @@ svg path:focus{
      border: none;
 }
    
-   .range-filter {
+.range-filter {
      width: 260px;
      margin-top: 49px;
-   }
+}
    
-   .filter-item legend {
+.filter-item legend {
      font-size: 18px;
      line-height: 24px;
      text-transform: uppercase;
      font-weight: 700;
-   }
+}
    
-   .range-controls {
+.range-controls {
      position: relative;
      height: 41px;
      margin-bottom: 15px;
@@ -834,20 +896,20 @@ svg path:focus{
      padding-left: 20px;
      background-color: #f1f1f1;
      border-radius: 5px;
-   }
+}
    
-   .range-controls .scale {
+.range-controls .scale {
      height: 2px;
      background: #d7dcde;
-   }
+}
    
-   .range-controls .bar {
+.range-controls .bar {
      width: 70%;
      height: 2px;
      background: #00ca74;
-   }
+}
    
-   .range-controls .toggle {
+.range-controls .toggle {
      position: absolute;
      top: 31px;
      left: 0;
@@ -859,28 +921,28 @@ svg path:focus{
      border-radius: 50%;
      box-shadow: 0 2px 1px 0 #cfcfcf;
      cursor: pointer;
-   }
+}
    
-   .range-controls .toggle-min {
+.range-controls .toggle-min {
      left: 18px;
-   }
+}
    
-   .range-controls .toggle-max {
+.range-controls .toggle-max {
      left: 160px;
-   }
+}
    
-   .price-controls {
+.price-controls {
      display: flex;
      justify-content: space-between;
-   }
+}
    
-   .price-controls label {
+.price-controls label {
      text-transform: uppercase;
      font-family: "Roboto", "Arial", sans-serif;
      font-size: 16px;
-   }
+}
    
-   .price-controls input {
+.price-controls input {
      width: 60px;
      padding: 10px;
      margin-left: 10px;
@@ -891,7 +953,7 @@ svg path:focus{
      background: #f1f1f1;
      font-family: inherit;
      font-size: inherit;
-   }
+}
 
 .card-header {
      font-size: 18px;
@@ -917,6 +979,8 @@ svg path:focus{
      height: 231px;
      color: var(--basic-light-gray);
      background-color: var(--basic-dark-white);
+     text-align: center;
+     top: 397px;
 }
 
 .card-description-details {
@@ -924,6 +988,7 @@ svg path:focus{
      line-height: 18px;
      color: var(--basic-light-gray);
      text-align: center;
+     margin-bottom: 45px;
 }
 
 .card-price {
@@ -933,7 +998,6 @@ svg path:focus{
      background: var(--basic-red);
      border-radius: 3px;
      padding: 16px 54px;
-     display: inline-flex;
      font-size: 16px;
      line-height: 18px;
 }
