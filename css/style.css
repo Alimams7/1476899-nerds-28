@@ -85,6 +85,23 @@ img {
      height: 100% ;
 }
 
+.container {
+     margin: 0 auto;
+     padding: 0;
+     max-width: 1160px;
+}
+
+
+.visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+}
 .page-body {
      min-height: 100%;
      display: grid;
@@ -101,6 +118,7 @@ img {
      min-width: 1200px;
      padding: 50px 0 0;
      background-color: var(--basic-dark-white);
+     font-weight: 500;
 }
 
 .maim-navigation {
@@ -112,8 +130,11 @@ img {
      height: 65px;
 }
 
-.basket-navigation {
-     margin: 0px 0px 0px 245px;
+.basket-navigation-link {
+     color: var(--basic-black);
+     display: block;
+     width: 160px;
+     text-align: right;
 }
 
 .site-navigation-wrapper {
@@ -122,45 +143,47 @@ img {
      margin: 0px 0px 0px 202px;
 }
 
-.conteiner {
-     margin: 0 auto;
-     padding: 0;
-     max-width: 1160px;
-     min-height: 100px;
-     position: relative;
-}
 
-
-.visually-hidden {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0;
-     padding: 0;
-     clip: rect(0 0 0 0);
-     overflow: hidden;
-}
 
 .maim-navigation {
-     font-size: 16px;
-     line-height: 30px;
-     color: var( --basic-black);
      background-color: var(--basic-dark-white);
      text-transform: uppercase;
+     display: ;
+     justify-conteflexnt: space-between;
+     align-items: center;
+     height: 114px;
 }
 
 .site-navigation {
-     width: 438px;
      margin: 0;
      padding: 0;
      min-height: 31px;
      list-style: none;
      display: flex;
+     align-items: center;
 }
 
-.site-navigation li {
-     margin-right: 46px;
+.nav-item-logo {
+     margin-right: 184px;
+}
+
+.nav-item {
+     margin-right: 44px;
+}
+
+.nav-item-link, .basket-navigation-link{
+     font-size: 16px;
+     line-height: 30px;
+     color: var( --basic-black);
+     font-weight: 500;
+}
+
+.nav-item-link:hover, .basket-navigation-link:hover {
+     color: var(--basic-red)
+}
+
+.nav-item-link:focus, .basket-navigation-link:focus {
+     color: var(--basic-soft-gray);
 }
 
 .site-navigation,
@@ -178,23 +201,6 @@ img {
 .site-navigation-current a:not([href]) {
      text-decoration: underline;
      text-decoration-color: var(--basic-red);
-}
-
-/* User navigation */
-.site-navigation a,
-.basket-navigation a {
-     color: var(--basic-black);
-}
-
-.site-navigation a:hover,
-.basket-navigation a:hover {
-     color: var(--basic-red) ;
-}
-
-.site-navigation a:focus,
-.basket-navigation a:focus{
-     color: var(--basic-soft-gray);
-
 }
 
 .menu-current{
@@ -220,6 +226,7 @@ img {
      max-width: 1160px;
      min-height: 100px;
      position: relative;
+     height: 431px;
 }
 .slider-controls {
      position: absolute;
@@ -496,19 +503,19 @@ img {
 
 .categories-list {
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-columns: 300px 300px 300px;
+     gap: 100px;
      margin: 0;
-     padding: 80px 0px 80px 0px ;
+     padding: 80px 0px 80px 0px;
 }
 
 /* Description */
 
 .description {
      text-align: center;
-     margin: 0;
      padding: 0;
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 660px 500px;
      padding-bottom: 74px;
      border-bottom: 2px solid #eee
 }
@@ -581,23 +588,23 @@ table {
 .partners-item {
      border-bottom: 2px solid #EEEEEE;
 }
-.partner {
-     align-items: center;
-}
 
 .list-of-partners{
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      margin: 0;
-     padding-top: 63px;
-     padding-bottom: 49px;
+     padding: 0;
+     justify-items: center;
+     align-items: center;
+     min-height: 180px;
 }
 
-.partner a {
+.partner-link {
+     display: block;
      opacity: .2;
 }
 
-.partner a:hover{
+.partner-link:hover{
      opacity: 1;
 }
 
@@ -621,7 +628,7 @@ table {
      background-color: #fff;
 }
 
-.map .conteiner {
+.map .container {
      top: -355px;
      left: -30px;
 }
@@ -849,7 +856,7 @@ table {
 }
 
 .filter-sort-item-up {
-     
+
 }
 
 .filter-values-grid label,
