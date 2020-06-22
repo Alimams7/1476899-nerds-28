@@ -48,7 +48,7 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="filter-item">
-            <legend class="filter-item-legend">Стоимость:</legend>
+            <legend class="filter-header">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -75,7 +75,7 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend class="filter-item-legend">Сетка</legend>
+            <legend class="filter-header">Сетка</legend>
             <ul class="filter-values-grid">
               <li>
                 <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
@@ -92,7 +92,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="filter-item-legend">Особенности</legend>
+            <legend class="filter-header">Особенности</legend>
             <ul class="filter-values-features">
               <li>
                 <input class="filter-input-features" type="checkbox" name="slider" id="slider" checked>
@@ -121,7 +121,7 @@
         </section>
         <div class="catalog">
           <div class="sort">
-            <span class="filter-sort-header">Сортировать:</span>
+            <span class="filter-header">Сортировать:</span>
             <ul class="filter-sort">
               <li class="filter-sort-item">
                 <a class="filter-sort-list" href="#" tabindex="0">По цене</a>
@@ -133,8 +133,10 @@
                 <a class="filter-sort-list" href="#" tabindex="0">По названию</a>
               </li>
             </ul>
+            <div class="filter-sort-item-order">
               <a class="filter-sort-item-down" href="#"></a>
               <a class="filter-sort-item-up" href="#"></a>
+            </div>
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -216,11 +218,11 @@
               </a>
             </li>
           </ul>
-          <div>
-            <a class="list-current" tabindex="0">1</a>
-            <a class="list-other" href="#" tabindex="0">2</a>
-            <a class="list-other" href="#" tabindex="0">3</a>
-            <a class="list-next" href="#" tabindex="0">Следующая</a>
+          <div class="page-list">
+            <a class="list-current">1</a>
+            <a class="list-other" href="#">2</a>
+            <a class="list-other" href="#">3</a>
+            <a class="list-next" href="#">Следующая</a>
           </div>
         </div>
       </div>

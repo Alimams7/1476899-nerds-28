@@ -143,8 +143,6 @@ img {
      margin: 0px 0px 0px 202px;
 }
 
-
-
 .maim-navigation {
      background-color: var(--basic-dark-white);
      text-transform: uppercase;
@@ -808,19 +806,12 @@ table {
 
 .sort {
      display: flex;
+     justify-content: space-between;
 }
 
-.filter-sort-header {
-     font-weight: bold;
-     font-size: 18px;
-     line-height: 30px;
-     text-transform: uppercase;
-}
 
 .filter-sort {
      display: flex;
-     justify-content: flex-end;
-     flex-wrap: wrap;
      padding: 0;
      margin: 0;
 }
@@ -833,6 +824,10 @@ table {
      text-transform: uppercase;
 }
 
+.filter-sort-item {
+     margin-right: 25px;
+}
+
 .filter-sort-list:hover{
      color: var(--basic-black);
      opacity: 0.6;
@@ -842,12 +837,18 @@ table {
      color: var(--basic-black);
 }
 
+.filter-sort-item-order {
+     display: flex;
+     align-items: center;
+}
+
 .filter-sort-item-down {
      width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
      border-top: 10px solid var(--basic-black);
+     margin-right: 18px;
 }
 
 .filter-sort-item-down:hover {
@@ -1065,8 +1066,17 @@ fieldset {
      line-height: 18px;
      background-color: var(--basic-dark-white);
      color: var(--basic-black);
-
 }
+
+.page-list {
+     display: flex;
+     margin-top: 55px;
+}
+
+.list-current, .list-other {
+     margin-right: 11px;
+}
+
 .list-other:hover, .list-next:hover{
      background-color: var(--basic-mono-gray);
 }
