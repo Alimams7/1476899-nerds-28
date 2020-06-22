@@ -641,16 +641,18 @@ table {
      background-color: #fff;
 }
 
-/*.map, .feedback-adress {
-     top: -355px;
-     left: -30px;
-}*/
+.feedback-adress {
+     top: 54px;
+     left: 140px;
+     text-align: center;
+}
 
 /* Footer */
 
 .footer {
      display: grid;
-     grid-template-columns: auto 1fr;
+     grid-template-columns: 260px 560px;
+     gap: 140px;
      margin: 0;
      padding-top: 63px;
      padding-bottom: 49px;
@@ -659,18 +661,10 @@ table {
 .footer-contacts {
      display: flex;
      text-align: center;
-     padding: 0px 139px 0px 0px;
+     padding: 0;
+     margin: 0;
 }
 
-.footer-contacts-list {
-     margin: 0px 6px;
-     padding: 0px;
-}
-
-.stock {
-     text-align: inherit;
-     padding-top: 20px;
-}
 
 .footer-feedback-header {
      font-size: 18px;
@@ -703,7 +697,10 @@ table {
 .footer-stock {
      line-height: 22px;
      color: var(--basic-gray);
-     margin: 10px 0px;
+}
+
+.footer-contacts-list {
+     margin-right: 9px;
 }
 
 .footer-contacts-list svg path:hover{
