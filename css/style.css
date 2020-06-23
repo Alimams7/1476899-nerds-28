@@ -768,17 +768,9 @@ table {
      width: 360px;
 }
 
-.catalog-item:nth-child(2n) {
-     margin-right: 0;
-}
-
-.catalog-item-img {
-     margin-top: -6px;
-}
-
-.catalog-item path {
+/*.catalog-item path {
      fill: #e9e9e9;
-}
+}*/
 
 .catalog-item path:hover {
      fill: #4d4d4d;
@@ -1002,6 +994,22 @@ table {
      background-color: var(--basic-dark-white);
      text-align: center;
      top: 397px;
+}
+
+.catalog-item:not(:first-child) .card-description {
+     display: none;
+}
+
+.catalog-item:not(:first-child):hover path{
+     fill: #e9e9e9;
+}
+
+.catalog-item:not(:first-child):hover .card-description {
+     display: block;
+}
+
+.catalog-item-img {
+     margin-top: -6px;
 }
 
 .card-description-details {
