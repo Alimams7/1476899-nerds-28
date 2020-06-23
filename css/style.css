@@ -31,6 +31,7 @@
      --basic-abdel-gray: #D5D5D5;
      --basic-alto-gray: #DBDBDB;
      --basic-dark-white: #EEEEEE;
+     --basic-light-white: #E1E1E1;
      --basic-white: #FFFFFF;
      --basic-light-red: #E37376;
      --basic-red: #FB565A;
@@ -651,8 +652,8 @@ table {
 
 .footer {
      display: grid;
-     grid-template-columns: 260px 560px;
-     gap: 140px;
+     grid-template-columns: 270px 560px;
+     gap: 130px;
      margin: 0;
      padding-top: 63px;
      padding-bottom: 49px;
@@ -701,15 +702,26 @@ table {
 
 .footer-contacts-list {
      margin-right: 9px;
+     background-color: var(--basic-light-white);
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
 }
 
-.footer-contacts-list svg path:hover{
-     fill: var(--basic-red);
+.footer-contacts-list-icon {
+     padding: 30px;
 }
 
-.footer-contacts-list svg path:focus{
-     fill: var(--basic-dark-red);
+.footer-contacts-list:hover{
+     background-color: var(--basic-red);
 }
+
+.footer-contacts-list:focus {
+     background-color: var(--basic-dark-red);
+}
+
 
 /* Feedback */
 
