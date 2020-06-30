@@ -1198,7 +1198,20 @@ fieldset {
      font-size: 16px;
 }
 
+.feedback-input-email {
+     width: 360px;
+     height: 50px;
+     border: 2px solid var(--basic-pule-blue);
+     box-sizing: border-box;
+     border-radius: 3px;
+     font-size: 16px;
+}
+
 .feedback-input-text {
+     border: 2px solid var(--basic-pule-blue);
+     box-sizing: border-box;
+     border-radius: 3px;
+     font-size: 16px;
      height: 118px;
      width: 760px;
 }
@@ -1226,13 +1239,12 @@ fieldset {
      top: -20px;
      margin-left: 282px;
      width: 760px;
-     z-index: 5;
      padding: 65px 100px;
 }
 
-/*.modal-feedback {
+.modal-show {
      display: block;
-}*/
+}
 
 .modal-close {
      position: absolute;
@@ -1262,4 +1274,50 @@ fieldset {
      left: 2px;
      background-color: var(--basic-pink);
      opacity: 0.3;
+}
+
+/*animation*/ 
+@keyframes bounce {
+     0% {
+       transform: translateY(-2000px);
+     }
+   
+     70% {
+       transform: translateY(30px);
+     }
+   
+     90% {
+       transform: translateY(-10px);
+     }
+   
+     100% {
+       transform: translateY(0);
+     }
+}
+
+@keyframes shake {
+     0%,
+     100% {
+       transform: translateX(0);
+     }
+   
+     10%,
+     30%,
+     50%,
+     70%,
+     90% {
+       transform: translateX(-10px);
+     }
+   
+     20%,
+     40%,
+     60%,
+     80% {
+       transform: translateX(10px);
+     }
+}
+   
+
+.modal-error {
+     animation: shake 0.6s;
 }
