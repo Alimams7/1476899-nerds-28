@@ -120,7 +120,7 @@ img {
 .main-header {
      margin: 0;
      min-width: 1200px;
-     padding: 50px 0 0;
+     padding: 52px 0 0;
      background-color: var(--basic-dark-white);
      font-weight: 500;
 }
@@ -174,11 +174,12 @@ img {
 }
 
 .nav-item-logo {
-     margin-right: 184px;
+     margin-right: 203px;
 }
 
 .nav-item {
      margin-right: 44px;
+     padding-top: 10px;
 }
 
 .nav-item-link, .basket-navigation-link{
@@ -186,6 +187,7 @@ img {
      line-height: 30px;
      color: var( --basic-black);
      font-weight: 500;
+     padding-top: 10px;
 }
 
 .nav-item-link:hover, .basket-navigation-link:hover {
@@ -210,8 +212,8 @@ img {
 
 .menu-current{
      border-bottom: 2px var(--basic-red) solid;
-     display:inline-block;
      cursor: context-menu;
+     padding-bottom: 21px;
 }
 
 .nav-item-link a:not([href]):hover {
@@ -445,7 +447,7 @@ img {
      padding: 0;
      display: grid;
      grid-template-columns: 660px 500px;
-     padding-bottom: 74px;
+     padding-bottom: 51px;
      border-bottom: 2px solid #eee
 }
 
@@ -465,7 +467,7 @@ img {
 }
 
 .description-list {
-     padding: 0px;
+     padding: 0px 0px 0px 38px;
      position: relative;
 }
 
@@ -473,7 +475,7 @@ img {
      font-size: 45px;
      font-weight: 500;
      line-height: 45px;
-     margin: 36px 0px 37px 0px;
+     margin: 36px 0px 30px 0px;
 }
 
 .description-item {
@@ -485,7 +487,8 @@ img {
 }
 
 .description-item-list {
-     margin: 15px 0;
+     margin: 23px 0;
+     position: relative;
 }
 
 .description-statistics-img{
@@ -628,8 +631,7 @@ img {
      grid-template-columns: 270px 560px;
      gap: 130px;
      margin: 0;
-     padding-top: 63px;
-     padding-bottom: 49px;
+     padding: 74px 0 49px 0;
 }
 
 .footer-contacts {
@@ -644,11 +646,18 @@ img {
      font-size: 18px;
      line-height: 30px;
      font-weight: bold;
+     text-transform: uppercase;
+     padding: 1px 26px 0 0;
 }
 
 .footer-feedback-description {
      line-height: 18px;
      color: var(--basic-light-gray);
+     padding: 6px 18px 0 0;
+}
+
+.footer-feedback-description-tel {
+     padding: 0px 33px 0 0;
 }
 
 .buttom-feedback {
@@ -657,8 +666,9 @@ img {
      font-weight: 500;
      background: var(--basic-red);
      border-radius: 3px;
-     padding: 16px 44px;
+     padding: 14px 44px;
      display: inline-flex;
+     margin-top: 15px;
 }
 
 .footer-header-stock {
@@ -738,7 +748,7 @@ img {
      line-height: 55px;
      font-weight: 500;
      background-color: var(--basic-dark-white);
-     padding: 87px 0px 108px 0px;
+     padding: 51px 23px 108px 0px;
      text-align: center;
      margin: 0;
 }
