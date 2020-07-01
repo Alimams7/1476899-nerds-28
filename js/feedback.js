@@ -40,7 +40,7 @@ feedbackForm.addEventListener("submit", function (evt) {
         localStorage.setItem("login", feedbackName.value);
       }
     }
-  });
+});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
