@@ -580,6 +580,22 @@ img {
      opacity: .2;
 }
 
+.partner-link-academy {
+     margin: 19px 27px 0 0;
+}
+
+.partner-link-borodinski {
+     margin: 9px 10px 0 0;
+}
+
+.partner-link-pink {
+     margin: 10px 0 0 16px;
+}
+
+.partner-link-mishka {
+     margin: 12px 0 0 27px;
+}
+
 .partner-link:hover{
      opacity: 1;
 }
