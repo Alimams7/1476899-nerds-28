@@ -611,6 +611,10 @@ img {
      margin-top: 80px;
 }
 
+.map-catalog {
+     margin-top: 58px
+}
+
 .feedback-adress {
      position: absolute;
      width: 297px;
@@ -681,6 +685,7 @@ img {
 .footer-stock {
      line-height: 22px;
      color: var(--basic-gray);
+     margin-top: 11px;
 }
 
 .footer-contacts-list {
@@ -722,7 +727,7 @@ img {
 .catalog-list {
      display: grid;
      grid-template-columns: 360px 360px;
-     gap: 41px;
+     gap: 18px 41px;
      padding: 0;
      margin: 0;
      list-style: none;
@@ -762,7 +767,8 @@ img {
 .filter-sort {
      display: flex;
      padding: 0;
-     margin: 0;
+     margin: 0 0 0 236px;
+
 }
 
 .filter-sort-list{
@@ -797,7 +803,7 @@ img {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
      border-top: 10px solid var(--basic-black);
-     margin-right: 18px;
+     margin-right: 20px;
 }
 
 .filter-sort-item-down:hover {
@@ -840,7 +846,7 @@ img {
 }
 
 .fieldset:not(:first-child) {
-     margin-top: 48px;
+     margin-top: 42px;
 }
 
 .filter-item-grid label,
@@ -852,8 +858,9 @@ img {
 }
 
 .filter-item {
-     padding: 0px;
+     padding: 0 0 8px 0;
      margin: 0px;
+
 }
 .filter-item-features label {
      padding-left: 36px;
@@ -864,11 +871,16 @@ img {
 }
 
 .filter-item-grid {
-     margin-top: 11px;
+     margin-top: 21px;
+}
+
+.filter-adaptive {
+     margin-top: 18px;
 }
 
 .filter-item-features {
      margin-top: 11px;
+     margin-bottom: 23px;
 }
 
 .filter-input-checkbox + label::before {
@@ -947,7 +959,7 @@ img {
      border-radius: 3px;
      padding: 16px 88px;
      border-width: 0px;
-     margin-top: 50px;
+     margin-top: 18px;
 }
 
 .filter-buttom:hover {
@@ -960,7 +972,7 @@ img {
 }
  
 .range-filter {
-     margin-top: 48px;
+     margin-top: 47px;
 }
 
 .filter-item-grid,
@@ -1048,6 +1060,7 @@ img {
      text-align: center;
      text-transform: uppercase;
      color: var(--basic-black);
+     margin-bottom: 14px;
 }
 
 .card-header:hover {
@@ -1090,7 +1103,7 @@ img {
      line-height: 18px;
      color: var(--basic-light-gray);
      text-align: center;
-     margin-bottom: 45px;
+     margin-bottom: 43px;
 }
 
 .card-price {
@@ -1099,7 +1112,7 @@ img {
      font-weight: 500;
      background: var(--basic-red);
      border-radius: 3px;
-     padding: 16px 54px;
+     padding: 15px 74px;
      font-size: 16px;
      line-height: 18px;
 }
@@ -1144,11 +1157,12 @@ fieldset {
      line-height: 18px;
      background-color: var(--basic-dark-white);
      color: var(--basic-black);
+     text-transform: uppercase;
 }
 
 .page-list {
      display: flex;
-     margin-top: 55px;
+     margin-top: 49px;
 }
 
 .list-current, .list-other {
