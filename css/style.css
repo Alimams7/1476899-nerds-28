@@ -109,7 +109,7 @@ img {
 .page-body {
      min-height: 100%;
      display: grid;
-     grid-template-rows: min-content 1fr min-content;
+     grid-template-rows: 114px 1fr min-content;
      align-content: center;
      margin: 0 auto;
      padding: 0;
@@ -120,7 +120,7 @@ img {
 .main-header {
      margin: 0;
      min-width: 1200px;
-     padding: 52px 0 0;
+     padding: 28px 0 0;
      background-color: var(--basic-dark-white);
      font-weight: 500;
 }
@@ -224,7 +224,7 @@ img {
 
 .slide{
      display: none;
-     padding: 42px 0 80px;
+     padding: 70px 0 79px;
 }
 
 .slider {
@@ -233,18 +233,16 @@ img {
 }
 
 .slides {
-     margin: 0 auto;
-     padding: 0;
-     max-width: 1160px;
      min-height: 100px;
      position: relative;
-     height: 404px;
+     height: 434px;
 }
+
 .slider-controls {
      position: absolute;
      left: 50%;
-     bottom: 104px;
-     z-index: 100;
+     bottom: 108px;
+     z-index: 5;
      width: 160px;
      height: 18px;
      text-align: center;
@@ -298,19 +296,19 @@ img {
 #slide-1:checked~.slides .slide:nth-child(1) {
      background-image: url(../img/nerds-index-slide1.png);
      background-repeat: no-repeat;
-     background-position: 99% -25px;
+     background-position: 99% 0px;
 }
 
 #slide-2:checked~.slides .slide:nth-child(2) {
      background-image: url(../img/nerds-index-slide2.png);
      background-repeat: no-repeat;
-     background-position: 99% -25px;
+     background-position: 99% 0px;
 }
 
 #slide-3:checked~.slides .slide:nth-child(3){
      background-image: url(../img/nerds-index-slide3.png);
      background-repeat: no-repeat;
-     background-position: 99% -25px;
+     background-position: 99% 0px;
 }
 
 .slogan {
@@ -322,7 +320,7 @@ img {
 
 /* Buttom */
 
-.buttom {
+.button {
      color: var(--basic-white);
      text-transform: uppercase;
      font-weight: 500;
@@ -333,22 +331,22 @@ img {
      margin-top: 23px;
 }
 
-.buttom:hover,
-.buttom-slider-red:hover,
-.feedback-buttom:hover, 
-.buttom-feedback:hover {
+.button:hover,
+.button-slider-red:hover,
+.feedback-button:hover, 
+.button-feedback:hover {
      background-color: var(--basic-soft-red);
 }
 
-.buttom:focus,
-.buttom-slider-red:focus,
-.feedback-buttom:focus, 
-.buttom-feedback:focus {
+.button:focus,
+.button-slider-red:focus,
+.feedback-button:focus, 
+.button-feedback:focus {
      background-color: var(--basic-dark-red);
      color: var(--basic-light-red);
      outline: none;
 }
-.buttom-slider-red{
+.button-slider-red{
      color: var(--basic-white);
      text-transform: uppercase;
      font-weight:500;
@@ -359,7 +357,7 @@ img {
      display: inline-flex;
 }
 
-.buttom-slider-green{
+.button-slider-green{
      color: var(--basic-white);
      text-transform: uppercase;
      font-weight: 500;
@@ -370,16 +368,16 @@ img {
      display: inline-flex;
 }
 
-.buttom-slider-green:hover {
+.button-slider-green:hover {
      background-color: var(--basic-soft-green);
 }
 
-.buttom-slider-green:focus {
+.button-slider-green:focus {
      background-color: var(--basic-dark-green);
      color: var(--basic-light-green);
 }
 
-.buttom-slider-yellow{
+.button-slider-yellow{
      color: var(--basic-white);
      text-transform: uppercase;
      font-weight: 500;
@@ -390,16 +388,16 @@ img {
      display: inline-flex;
 }
 
-.buttom-slider-yellow:hover {
+.button-slider-yellow:hover {
      background-color: var(--basic-soft-yellow);
 }
 
-.buttom-slider-yellow:focus {
+.button-slider-yellow:focus {
      background-color: var(--basic-dark-yellow);
      color: var(--basic-light-yellow);
 }
 
-.feedback-buttom {
+.feedback-button {
      color: var(--basic-white);
      text-transform: uppercase;
      font-weight: 500;
@@ -424,6 +422,7 @@ img {
      font-size: 16px;
      line-height: 24px;
      color: var(--basic-dark-gray);
+     width: 260px;
 }
 
 .categories {
@@ -492,20 +491,14 @@ img {
 }
 
 .description-statistics-img{
-     position: relative;
-     top: 0px;
-     left: 69px;
+     margin: 0;
+     float: right;
 }
      
 .description-list-marker{
      color: var(--basic-red);
      font-size: 25px;
      margin: 0 7px 0 0;
-}
-.description-statistics-item{
-     position: relative;
-     top: 14px;
-     left: 71px; 
 }
 
 .description-item-list::before {
@@ -627,8 +620,8 @@ img {
      margin-top: 80px;
 }
 
-.map-catalog {
-     margin-top: 58px
+.map-iframe {
+     background-image: url(../img/map.jpg);
 }
 
 .feedback-adress {
@@ -680,7 +673,7 @@ img {
      padding: 0px 33px 0 0;
 }
 
-.buttom-feedback {
+.button-feedback {
      color: var(--basic-white);
      text-transform: uppercase;
      font-weight: 500;
@@ -723,7 +716,7 @@ img {
 }
 
 .footer-contacts-list:focus {
-     background-color: var(--basic-light-white);
+     background-color: var(--basic-dark-red);
 }
 
 /* Catalog */
@@ -795,6 +788,10 @@ img {
      text-transform: uppercase;
 }
 
+.filter-sort-list-active {
+     opacity: 1;
+}
+
 .filter-sort-item {
      margin-right: 25px;
 }
@@ -862,13 +859,12 @@ img {
 }
 
 .fieldset:not(:first-child) {
-     margin-top: 42px;
+     margin-top: 20px;
 }
 
 .filter-item-grid label,
 .filter-item-features label {
      position: relative;
-     display: block;
      cursor: pointer;
      user-select: none;
 }
@@ -887,16 +883,21 @@ img {
 }
 
 .filter-item-grid {
-     margin-top: 21px;
+     padding-bottom: 16px;
 }
 
 .filter-adaptive {
-     margin-top: 18px;
+     margin-top: 13px;
 }
 
-.filter-item-features {
-     margin-top: 11px;
-     margin-bottom: 23px;
+.filter-label {
+     height: 25px;
+     display: flex;
+     align-items: center; 
+}
+
+.filter-label-features {
+     margin-top: 15px;
 }
 
 .filter-input-checkbox + label::before {
@@ -910,8 +911,26 @@ img {
      border-radius: 3px;
 }
 
+.filter-input-checkbox:checked + label::before {
+     background-image: url(../img/shape2.svg);
+     opacity: 0.4;
+     background-repeat: no-repeat;
+     width: 25px;
+     height: 26px;
+     border: none;
+}
+
 .filter-input-checkbox+label:hover::before {
-     border: 2px solid #4d4d4d;
+     border: 2px solid #4D4D4D;
+}
+
+.filter-input-checkbox:checked+label:hover::before{
+     background-image: url(../img/shape2.svg);
+     opacity: 1;
+     background-repeat: no-repeat;
+     width: 25px;
+     height: 26px;
+     border: none;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -966,7 +985,7 @@ img {
      background-color: #4D4D4D;
 }
 
-.filter-buttom{
+.filter-button{
      color: var(--basic-black);
      text-transform: uppercase;
      font-weight: 500;
@@ -978,17 +997,17 @@ img {
      margin-top: 18px;
 }
 
-.filter-buttom:hover {
+.filter-button:hover {
      background-color: var(--basic-mono-gray);
 }
 
-.filter-buttom:focus {
+.filter-button:focus {
      background-color: var(--basic-abdel-gray);
      opacity: 0.3;
 }
  
 .range-filter {
-     margin-top: 47px;
+     margin: 47px 0px 33px 0px;
 }
 
 .filter-item-grid,
@@ -1111,7 +1130,7 @@ img {
 }
 
 .catalog-item-img {
-     margin-top: -6px;
+     margin-top: -7px;
 }
 
 .card-description-details {
@@ -1131,6 +1150,7 @@ img {
      padding: 15px 74px;
      font-size: 16px;
      line-height: 18px;
+     cursor: default;
 }
 
 .card-price:hover {

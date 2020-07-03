@@ -9,39 +9,37 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="container">
-        <nav class="maim-navigation" aria-label="Меню сайта">
-          <ul class="site-navigation site-navigation-wrapper">
-            <li class="nav-item-logo">
-              <a class="main-header-logo" href="index.html">
-            <img src="img/nerds_logo.svg" alt="Логотип Нёрдс" width="160" height="65">
-          </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="blank.html">Студия</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link" href="blank.html">Клиенты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item-link nav-item-link menu-current">Магазин</a>
-            </li>
-            <li class="nav-item-link">
-              <a class="nav-item-link" href="blank.html">Контакты</a>
-            </li>
-            </ul>
-            <a class="basket-navigation-link" href="#">
-              <svg class="basket-navigation-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="#A6A6A6"/>
-                <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="#A6A6A6"/>
-                <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
-              </svg>
-              Корзина
+      <nav class="maim-navigation container" aria-label="Меню сайта">
+        <ul class="site-navigation site-navigation-wrapper">
+          <li class="nav-item-logo">
+            <a class="main-header-logo" href="index.html">
+              <img src="img/nerds_logo.svg" alt="Логотип Нёрдс" width="160" height="65">
             </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="blank.html">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="blank.html">Клиенты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link nav-item-link menu-current">Магазин</a>
+          </li>
+          <li class="nav-item-link">
+            <a class="nav-item-link" href="blank.html">Контакты</a>
+          </li>
+          </ul>
+          <a class="basket-navigation-link" href="#">
+            <svg class="basket-navigation-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="#A6A6A6"/>
+              <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="#A6A6A6"/>
+              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
+            </svg>
+            Корзина
+          </a>
         </nav>
+      </header>
       <p class="catalog-header">Магазин готовых шаблонов</p>
-    </div>
-    </header>
     <main>
       <h1 class="visually-hidden">Каталог</h1>
       <div class="page-catalog container">
@@ -80,15 +78,15 @@
             <ul class="filter-item">
               <li class="filter-item-grid filter-adaptive">
                 <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive" checked>
-                <label for="adaptive">Адаптивная</label>
+                <label class="filter-label" for="adaptive">Адаптивная</label>
               </li>
               <li class="filter-item-grid">
                 <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="fixed" id="fixed">
-                <label  for="fixed">Фиксированная</label>
+                <label class="filter-label"  for="fixed">Фиксированная</label>
               </li>
               <li class="filter-item-grid">
                 <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="rubber" id="rubber">
-                <label for="rubber">Резиновая</label>
+                <label class="filter-label" for="rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -97,27 +95,27 @@
             <ul class="filter-item">
               <li class="filter-item-features">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
-                <label for="slider">Слайдер</label>
+                <label class="filter-label filter-label-features" for="slider">Слайдер</label>
               </li>
               <li class="filter-item-features">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
-                <label for="advantages">Блок преимуществ</label>
+                <label class="filter-label filter-label-features" for="advantages">Блок преимуществ</label>
               </li>
               <li class="filter-item-features">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="news" checked>
-                <label for="news">Новости</label>
+                <label class="filter-label filter-label-features" for="news">Новости</label>
               </li>
               <li class="filter-item-features">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
-                <label for="gallery">Галерея</label>
+                <label class="filter-label filter-label-features" for="gallery">Галерея</label>
               </li>
               <li class="filter-item-features">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="basket">
-                <label for="basket">Корзина</label>
+                <label class="filter-label filter-label-features" for="basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <button class="filter-buttom" type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
           </form>
         </section>
         <div class="catalog">
@@ -125,7 +123,7 @@
             <span class="filter-header">Сортировать:</span>
             <ul class="filter-sort">
               <li class="filter-sort-item">
-                <a class="filter-sort-list" href="#">По цене</a>
+                <a class="filter-sort-list filter-sort-list-active" href="#">По цене</a>
               </li>
               <li class="filter-sort-item">
                 <a class="filter-sort-list" href="#">По типу</a>
@@ -197,7 +195,7 @@
                 <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
                 </svg>
-                <img class="catalog-item-img" src="img/mask_group-4.jpg" alt="Aplus" width="360" height="580">
+                <img class="catalog-item-img" src="img\mask_group-4.jpg" alt="Aplus" width="360" height="580">
                 <div class="card-description">
                   <h3 tabindex="0" class="card-header">A Plus</h3>
                   <p class="card-description-details">Лендинг курсов повышения <br> квалификации</p>
@@ -239,7 +237,7 @@
           </p>
           <a href="tel:+78122757575" class="footer-feedback-description">тел. +7 (812) 275-75-75</a>
           <p>
-            <a href="blank.html" class="buttom-feedback">Напишите нам</a>
+            <a href="blank.html" class="button-feedback">Напишите нам</a>
           </p>
         </div>
       </section>
@@ -298,7 +296,7 @@
           <label for="comment" class="feedback-ladel">Текст письма:</label> <br>
           <textarea class="feedback-input-text" name="comment" id="comment" cols="250" rows="5" placeholder="В свободной форме" ></textarea>
         </p>
-        <input type="submit" class="feedback-buttom" value="Отправить">
+        <input type="submit" class="feedback-button" value="Отправить">
         <a class="modal-close">Закрыть окно</a>
       </form>
     </section>

@@ -1,4 +1,4 @@
-var feedbackLink = document.querySelector(".buttom-feedback");
+var feedbackLink = document.querySelector(".button-feedback");
 var feedbackPopup = document.querySelector(".modal-feedback");
 var feedbackClose = feedbackPopup.querySelector(".modal-close");
 var feedbackForm = feedbackPopup.querySelector(".container-form");
@@ -40,14 +40,14 @@ feedbackForm.addEventListener("submit", function (evt) {
         localStorage.setItem("login", feedbackName.value);
       }
     }
-});
+  });
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (feedbackPopup.classList.contains("modal-show")) {
         evt.preventDefault();
         feedbackPopup.classList.remove("modal-show");
-        loginPopup.classList.remove("modal-error");
+        feedbackPopup.classList.remove("modal-error");
       }
     }
 });
