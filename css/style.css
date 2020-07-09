@@ -1153,7 +1153,7 @@ img {
 }
 
 .catalog-item:hover .card-description,
-.catalog-item:focus .card-description  {
+.catalog-item:focus-within .card-description  {
      display: block;
 }
 
