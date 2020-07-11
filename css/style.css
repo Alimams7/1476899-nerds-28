@@ -1,16 +1,4 @@
 @font-face {
-	font-family: "Roboto"; 
-	src: local("Roboto"),
-		url(/fonts/roboto-v20-latin_cyrillic-regular.woff2); 
-}
-
-@font-face {
-	font-family: "Roboto"; 
-	src: local("Roboto"),
-		url(/fonts/roboto-v20-latin_cyrillic-regular.woff); 
-}
-
-@font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -274,31 +262,31 @@ img {
      cursor: pointer;
  }
 .slider-controls label::after {
-  content: "";
-    width: 18px;
-    height: 18px;
-    background: var(--basic-white);
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    z-index: 1;
-    border-radius: 50%   
+     content: "";
+     width: 18px;
+     height: 18px;
+     background: var(--basic-white);
+     position: absolute;
+     top: 8px;
+     left: 8px;
+     z-index: 1;
+     border-radius: 50%   
 }
 
 #slide-1:checked~.slider-controls .slider-controls-slide-1::before, 
 #slide-2:checked~.slider-controls .slider-controls-slide-2::before, 
 #slide-3:checked~.slider-controls .slider-controls-slide-3::before {
      content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 2;
-    width: 4px;
-    height: 4px;
-    margin: -4px;
-    background-color: inherit;
-    border: 2px solid #C1C1C1;
-    border-radius: 50%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     z-index: 2;
+     width: 4px;
+     height: 4px;
+     margin: -4px;
+     background-color: inherit;
+     border: 2px solid #C1C1C1;
+     border-radius: 50%;
  }
 
 #slide-1:checked~.slides .slide:nth-child(1), #slide-2:checked~.slides .slide:nth-child(2), #slide-3:checked~.slides .slide:nth-child(3) {
@@ -306,21 +294,21 @@ img {
 }
 
 #slide-1:checked~.slides .slide:nth-child(1) {
-     background-image: url(../img/nerds-index-slide1.png);
+     background-image: url(../img/nerds_index_slide1.png);
      background-repeat: no-repeat;
-     background-position: 99% -6px;
+     background-position: 99% 0;
 }
 
 #slide-2:checked~.slides .slide:nth-child(2) {
-     background-image: url(../img/nerds-index-slide2.png);
+     background-image: url(../img/nerds_index_slide2.png);
      background-repeat: no-repeat;
-     background-position: 99% -6px;
+     background-position: 99% 0;
 }
 
 #slide-3:checked~.slides .slide:nth-child(3){
-     background-image: url(../img/nerds-index-slide3.png);
+     background-image: url(../img/nerds_index_slide3.png);
      background-repeat: no-repeat;
-     background-position: 99% -6px;
+     background-position: 99% 0;
 }
 
 .slogan {
@@ -429,6 +417,7 @@ img {
      padding: 16px 83px;
      display: inline-flex;
      border-width: 0px;
+     margin: 25px 0 0 2px;
 }
 
 /* Сategories */
@@ -945,20 +934,20 @@ img {
 }
 
 .filter-input-checkbox:checked + label::before {
-     background-image: url(../img/checkbox-on.svg);
+     background-image: url(../img/checkbox_on.svg);
      opacity: 0.4;
      background-repeat: no-repeat;
-     width: 23px;
-     height: 23px;
+     width: 24px;
+     height: 24px;
      border: none;
 }
 
 .filter-input-checkbox:checked + label:hover::before{
-     background-image: url(../img/checkbox-on.svg);
+     background-image: url(../img/checkbox_on.svg);
      opacity: 1;
      background-repeat: no-repeat;
-     width: 23px;
-     height: 23px;
+     width: 24px;
+     height: 24px;
      border: none;
 }
 
@@ -1250,6 +1239,7 @@ fieldset {
 .container-form {
      width: 761px;
      height: 353px;
+     margin-left: 98px;
 }
 
 .form-item{
@@ -1261,6 +1251,7 @@ fieldset {
      font-size: 46px;
      line-height: 53px;
      font-weight: bold;
+     margin: 64px 0 15px 98px;
 }
 
 .feedback-ladel {
@@ -1285,6 +1276,12 @@ fieldset {
      font-size: 16px;
 }
 
+.feedback-input-name, .feedback-input-email {
+     margin-top: 7px;
+     padding-left: 15px;
+}
+
+
 .feedback-input-text {
      border: 2px solid var(--basic-pule-blue);
      box-sizing: border-box;
@@ -1293,6 +1290,8 @@ fieldset {
      height: 118px;
      width: 760px;
      resize: none;
+     margin-top: 5px;
+     padding: 15px 0px 0px 15px
 }
 
 .feedback-input-name:hover, 
@@ -1337,9 +1336,9 @@ fieldset {
 
 .modal-feedback {
      display: none;
-     width: 760px;
-     padding: 65px 100px;
-     top: 50%;
+     width: 960px;
+     height: 586px;
+     top: 62%;
      left: 50%;
      transform: translate(-50%, -50%);
 }
@@ -1354,9 +1353,8 @@ fieldset {
      position: absolute;
      top: 78px;
      right: 90px;
-     width: 22px;
+     width: 24px;
      font-size: 0;
-     border: 0;
      cursor: pointer;
 
 }
@@ -1387,10 +1385,9 @@ fieldset {
 .modal-close::before {
      content: "";
      position: absolute;
-     width: 19px;
-     height: 3px;
-     top: 10px;
-     left: 2px;
+     width: 24px;
+     height: 4px;
+     top: 8px;
      background-color: var(--basic-pink);
      opacity: 0.3;
 }
@@ -1402,15 +1399,15 @@ fieldset {
      }
    
      70% {
-          top: 55%;
+          top: 65%;
      }
    
      90% {
-          top: 45%;
+          top: 59%;
      }
    
      100% {
-          top: 50%;
+          top: 62%;
      }
 }
 
