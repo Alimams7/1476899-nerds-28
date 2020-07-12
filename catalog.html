@@ -23,7 +23,7 @@
             <a class="nav-item-link" href="#">Клиенты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-item-link menu-current">Магазин</a>
+            <a class="nav-item-link main-catalog menu-current">Магазин</a>
           </li>
           <li class="nav-item-link">
             <a class="nav-item-link" href="#">Контакты</a>
@@ -73,10 +73,10 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="fieldset">
-            <legend class="filter-header">Сетка</legend>
+          <fieldset class="fieldset fielsed-grid">
+            <legend class="filter-header filter-header-grid">Сетка</legend>
             <ul class="filter-item">
-              <li class="filter-item-grid filter-adaptive">
+              <li class="filter-item-grid">
                 <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" id="adaptive" checked>
                 <label class="filter-label" for="adaptive">Адаптивная</label>
               </li>
@@ -91,9 +91,9 @@
             </ul>
           </fieldset>
           <fieldset class="fieldset">
-            <legend class="filter-header">Особенности</legend>
+            <legend class="filter-header  filter-header-features">Особенности</legend>
             <ul class="filter-item">
-              <li class="filter-item-features">
+              <li class="filter-item-features filter-item-features-slider">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
                 <label class="filter-label filter-label-features" for="slider">Слайдер</label>
               </li>
@@ -294,7 +294,7 @@
           <textarea class="feedback-input-text" name="comment" id="comment" cols="250" rows="5" placeholder="В свободной форме" ></textarea>
         </p>
         <input type="submit" class="feedback-button" value="Отправить">
-        <a class="modal-close">Закрыть окно</a>
+        <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
       </form>
     </section>
     <script src="js/feedback.js"></script>

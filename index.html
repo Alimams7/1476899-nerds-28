@@ -23,7 +23,7 @@
             <a class="nav-item-link" href="#">Клиенты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-item-link" href="catalog.html">Магазин</a>
+            <a class="nav-item-link main-catalog" href="catalog.html">Магазин</a>
           </li>
           <li class="nav-item-link">
             <a class="nav-item-link" href="#">Контакты</a>
@@ -42,9 +42,9 @@
     <main>
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <div class="slider">
-        <input class="visually-hidden" type="radio" name="slider" id="slide-1" checked>
-        <input class="visually-hidden" type="radio" name="slider" id="slide-2">
-        <input class="visually-hidden" type="radio" name="slider" id="slide-3">
+        <input class="visually-hidden slide-1" type="radio" name="slider" id="slide-1" checked>
+        <input class="visually-hidden slide-2" type="radio" name="slider" id="slide-2">
+        <input class="visually-hidden slide-3" type="radio" name="slider" id="slide-3">
         <div class="slider-controls">
           <label class="slider-controls-slide-1" for="slide-1"></label>
           <label class="slider-controls-slide-2" for="slide-2"></label>
@@ -98,7 +98,7 @@
             <h3 class="description-item">Выполняем заказы на разработку:</h3>
             <ul class="description-list">
               <li class="description-item-list">Веб сайтов любой сложности</li>
-              <li class="description-item-list">Мобильных приложений для IOS и Android</li>
+              <li class="description-item-list description-item-list-mobile">Мобильных приложений для IOS и Android</li>
               <li class="description-item-list">Слайд-шоу и видео для корпоративных приложений</li>
             </ul>
           </div>
@@ -219,7 +219,7 @@
           <textarea class="feedback-input-text" name="comment" id="comment" cols="250" rows="5" placeholder="В свободной форме" ></textarea>
         </p>
         <input type="submit" class="feedback-button" value="Отправить">
-        <a class="modal-close">Закрыть окно</a>
+        <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
       </form>
     </section>
     <script src="js/feedback.js"></script>
