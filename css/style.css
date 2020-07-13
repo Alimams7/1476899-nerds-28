@@ -232,6 +232,7 @@ img {
  .slider-controls label{
      position: relative;
      display: inline-block;
+     vertical-align: center;
      width: 18px;
      height: 18px;
      padding: 8px;
@@ -322,6 +323,7 @@ img {
      border-radius: 3px;
      padding: 13px 54px;
      display: inline-flex;
+     vertical-align: center;
 }
 
 .button:hover,
@@ -353,6 +355,7 @@ img {
      padding: 13px 40px;
      margin-top: 15px;
      display: inline-flex;
+     vertical-align: center;
 }
 
 .button-slider-green{
@@ -364,6 +367,7 @@ img {
      padding: 13px 40px;
      margin-top: 15px;
      display: inline-flex;
+     vertical-align: center;
 }
 
 .button-slider-green:hover,
@@ -385,6 +389,7 @@ img {
      padding: 13px 40px;
      margin-top: 15px;
      display: inline-flex;
+     vertical-align: center;
 }
 
 .button-slider-yellow:hover, .button-slider-yellow:focus {
@@ -406,6 +411,7 @@ img {
      display: inline-flex;
      border-width: 0px;
      margin: 25px 0 0 2px;
+     vertical-align: center;
 }
 
 /* Сategories */
@@ -683,6 +689,7 @@ img {
      border-radius: 3px;
      padding: 13px 45px;
      display: inline-flex;
+     vertical-align: center;
      margin-top: 18px;
 }
 
