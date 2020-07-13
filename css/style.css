@@ -98,8 +98,12 @@ img {
      font-weight: 500;
 }
 
-.maim-navigation {
+.main-navigation {
      display: flex;
+     text-transform: uppercase;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
 
 .main-header-logo {
@@ -129,13 +133,6 @@ img {
      margin: 0px 0px 0px 202px;
 }
 
-.maim-navigation {
-     text-transform: uppercase;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
 .site-navigation {
      margin: 0;
      padding: 0;
@@ -143,6 +140,7 @@ img {
      list-style: none;
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
 }
 
 .nav-item-logo {
@@ -659,6 +657,7 @@ img {
      text-align: center;
      padding: 0;
      margin: 0;
+     flex-wrap: wrap;
 }
 
 
